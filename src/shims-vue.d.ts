@@ -4,3 +4,10 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+declare module 'mockjs'
+declare module '@vicons'
+
+interface AnyObject {
+  [key: string]: any
+}
