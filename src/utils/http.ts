@@ -35,12 +35,11 @@ interface ResType<T> {
 }
 
 interface Http {
-  get<T>(url: string, params?: unknown): Promise<ResType<T>>
-  post<T>(url: string, params?: unknown): Promise<ResType<T>>
-  upload<T>(url: string, params: unknown): Promise<ResType<T>>
+  get<T>(url: string, params?: unknown): Promise<T>
+  upload<T>(url: string, params: unknown): Promise<T>
+  post<T>(url: string, params?: unknown): Promise<T>
   download(url: string): void
 }
-
 const http: Http = {
   get(url, params) {
     return new Promise((resolve, reject) => {

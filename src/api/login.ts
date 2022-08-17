@@ -1,9 +1,5 @@
 import http from '@/utils/http'
 
-const loginApi: Api.LoginApi = {
-  login(params) {
-    return http.post('/mock/login', params)
-  },
+export const userLogin = (params: NetReq.UserLogin): Promise<NetResp.userLogin> => {
+  return http.post('/mock/login', params)
 }
-
-export default loginApi

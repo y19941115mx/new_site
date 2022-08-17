@@ -11,14 +11,14 @@
 
 <script setup lang="ts">
 import { useMainStore } from '@/store/main'
-import loginApi from '@/api/login'
+import { userLogin } from '@/api/login'
 
 const mainStore = useMainStore()
 
 onMounted(() => {
   const passWord = '123456'
   const userName = 'admin'
-  loginApi.login({ passWord, userName })
+  userLogin({ passWord, userName }).then((value) => value.token)
 })
 
 const updateName = () => {
