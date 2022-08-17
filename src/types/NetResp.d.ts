@@ -1,3 +1,5 @@
 declare namespace NetResp {
-  type userLogin = { token: string }
+  interface userLogin {
+    token: string
+  }
 }
