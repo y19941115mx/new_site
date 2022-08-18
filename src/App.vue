@@ -1,16 +1,15 @@
 <template>
-  <n-message-provider>
-    <sidebar />
-    <router-view></router-view>
-  </n-message-provider>
+  <n-config-provider>
+    <app-provider>
+      <router-view />
+    </app-provider>
+  </n-config-provider>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Sidebar from './components/sidebar.vue'
 export default defineComponent({
   name: 'App',
-  components: { Sidebar },
 })
 </script>
 
