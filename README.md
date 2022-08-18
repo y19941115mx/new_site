@@ -32,7 +32,7 @@ yarn build
 
 ## 约束代码风格
 
-项目中安装了eslint和prettier库，并使用huskey(git钩子函数)进行代码检测，书写时不用关心格式，git每次提交前会自动检测和修复代码以符合规范，vscode编辑器建议关闭对应的Eslint插件和prettier插件防止误报
+项目中安装了eslint和prettier库，并使用huskey(git钩子函数)进行代码检测，书写时不用关心格式，git每次提交前会自动检测和修复代码以符合规范，vscode编辑器建议关闭对应的Eslint插件和prettier插件防止误报。格式控还可以通过这种方式增加自己使用git提交的频率
 
 
 ## 环境变量配置
@@ -83,5 +83,11 @@ console.log(import.meta.env.VITE_APP_WEB_URL)
 - .....
 
 ## 特色功能
-
+#### 挂载方法
+```js
+// windows下挂载了三个常用方法
+    $message: MessageApiInjection
+    $dialog: DialogApiInjection
+    $loading: LoadingBarApiInjection
+```
 
