@@ -26,6 +26,7 @@ export default (env) =>
         },
       }),
       Components({
+        extensions: ['vue'],
         resolvers: [NaiveUiResolver(), IconsResolver({ componentPrefix: 'icon' })],
       }),
       viteMockServe({
