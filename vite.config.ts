@@ -4,7 +4,10 @@ import path from 'path'
 import Components from 'unplugin-vue-components/vite'
 import { viteMockServe } from 'vite-plugin-mock'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import IconsResolver from 'unplugin-icons/resolver'
+
 import AutoImport from 'unplugin-auto-import/vite'
+import Icons from 'unplugin-icons/vite'
 
 // https://vitejs.dev/config/
 export default (env) =>
@@ -12,6 +15,7 @@ export default (env) =>
     base: './', //打包路径
     plugins: [
       vue(),
+      Icons(),
       AutoImport({
         imports: ['vue', 'vue-router', '@vueuse/core'],
         // eslint报错解决
@@ -22,7 +26,7 @@ export default (env) =>
         },
       }),
       Components({
-        resolvers: [NaiveUiResolver()],
+        resolvers: [NaiveUiResolver(), IconsResolver({ componentPrefix: 'icon' })],
       }),
       viteMockServe({
         ignore: /^_/, // 忽略以下划线`_`开头的文件
