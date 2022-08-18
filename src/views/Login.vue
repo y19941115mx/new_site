@@ -22,10 +22,10 @@ onMounted(() => {
 })
 
 const updateName = () => {
-  window.$message.success('登录成功')
   mainStore.$patch({
     name: '名称被修改了,nameLength也随之改变了',
   })
+  window.$message.success('成功')
 }
 </script>
 

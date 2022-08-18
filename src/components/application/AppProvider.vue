@@ -1,8 +1,11 @@
 <template>
   <n-loading-bar-provider>
+    <loading-content />
     <n-dialog-provider>
+      <dialog-content />
       <n-notification-provider>
         <n-message-provider>
+          <message-content />
           <slot></slot>
         </n-message-provider>
       </n-notification-provider>
@@ -10,8 +13,4 @@
   </n-loading-bar-provider>
 </template>
 
-<script setup lang="ts">
-import { useMessage } from 'naive-ui'
-
-window.$message = useMessage()
-</script>
+<script setup lang="ts"></script>
