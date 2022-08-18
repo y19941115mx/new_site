@@ -1,0 +1,10 @@
+// Vue 工程配置
+{
+    "files.autoSave": "off",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

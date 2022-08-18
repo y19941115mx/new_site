@@ -6,6 +6,7 @@
 4. `Vue.js devtools`：浏览器调试插件,Edge版本不需要翻墙
 5. `Vue Language Features (Volar)`：Vscode 开发 vue3 必备插件，提供语法高亮提示
 6. `Vue 3 Snippets`：vue3 快捷输入
+6. `eslint`：代码自动检测与格式化
 
 > 由于`Vue.js devtools` 需要到谷歌扩展商店才能下载,贴心 ❤️ 的`xy`已经为大家准备好了`crx`文件了,公众号回复:【`VueDevTools`】可自动获取哦 💪
 ## 项目启动
@@ -32,8 +33,7 @@ yarn build
 
 ## 约束代码风格
 
-项目中安装了eslint和prettier库，并使用huskey(git钩子函数)进行代码检测，书写时不用关心格式，git每次提交前会自动检测和修复代码以符合规范，vscode编辑器建议关闭对应的Eslint插件和prettier插件防止误报。格式控还可以通过这种方式增加自己使用git提交的频率
-
+使用eslint插件约束代码风格，设置eslint插件的配置，保存代码时自动更新
 
 ## 环境变量配置
 
