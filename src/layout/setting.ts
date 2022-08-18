@@ -1,7 +1,7 @@
 import logoImage from '@/assets/logo.png'
 import loginImage from '@/assets/logo.png'
 
-export const websiteConfig = Object.freeze({
+const websiteConfig = Object.freeze({
   title: 'NaiveUiAdmin',
   footerDesc: '我是footer',
   logo: logoImage,
@@ -12,3 +12,5 @@ export const websiteConfig = Object.freeze({
   //导航风格 dark 暗色侧边栏 light 白色侧边栏 header-dark 暗色顶栏
   navTheme: 'light',
 })
+
+export default websiteConfig
