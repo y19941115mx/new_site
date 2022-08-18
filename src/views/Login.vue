@@ -5,7 +5,7 @@
   <hr />
   <button @click="updateName">修改store中的name</button>
   <hr />
-
+  <p></p>
   <n-button>naive-ui</n-button>
 </template>
 
